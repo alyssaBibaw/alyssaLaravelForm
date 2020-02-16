@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\ValidationRequest;
 use DB;
 use Storage;
+use RealRashid\SweetAlert\Facades\Alert;
 
 
 class FormController extends Controller
@@ -29,21 +30,9 @@ class FormController extends Controller
       //$user = DB::select("SELECT * from insert_table");
 
      // return redirect()->back() ->with('alert', 'Record Successfully Inserted!');
-?>
-<!-- <script>
-      alert('Title','Lorem Lorem Lorem', 'success');
-      </script> -->
-
-      <script type='text/javascript'>swal({
-             // icon: 'success',
-             // text: 'Added!',
-            type:'success',
-            title: "Added.",
-            icon: "success"
-          });
-      </script>
-
-      <?php
+      Alert::success('Success Title', 'Success Message');
       return view('form');
+
+
    }
 }
