@@ -15,6 +15,24 @@ class FormController extends Controller
 
    }
 
+
+   public function activity() {
+
+      return view('activity');
+
+   }
+
+
+   public function displayDatas(Request $request){
+    
+    $firstname = $request->input('firstname');
+    $lastname = $request->input('lastname');
+    $age = $request->input('age');
+
+    return view('displayAbout',['firstname' => $firstname,'lastname' => $lastname, 'age' => $age]);
+
+   }
+
    public function displayData(){
       $user = DB::select("SELECT * from insert_table");
       return view('display',['user' => $user]);
@@ -27,9 +45,7 @@ class FormController extends Controller
       $middlename = $request->middlename;
 
       DB::INSERT("INSERT into insert_table(lastname,firstname,middlename)VALUES(?,?,?)",[$lastname,$firstname,$middlename]);
-      //$user = DB::select("SELECT * from insert_table");
-
-     // return redirect()->back() ->with('alert', 'Record Successfully Inserted!');
+      
       Alert::success('Success Title', 'Success Message');
       return view('form');
 

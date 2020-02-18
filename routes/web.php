@@ -18,8 +18,14 @@
 
 
 //displaying
-Route::get('/','FormController@Form');
+Route::get('/Form','FormController@Form');
 Route::get('/displayData','FormController@displayData');
 
 //inserting data
 Route::post('/insertData','FormController@insertData');
+
+
+//displaying activity
+Route::get('/activity','FormController@activity');
+
+Route::post('/displayDatas','FormController@displayDatas');
