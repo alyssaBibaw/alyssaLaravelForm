@@ -23,3 +23,15 @@ Route::get('/displayData','FormController@displayData');
 
 //inserting data
 Route::post('/insertData','FormController@insertData');
+
+
+//displaying activity
+Route::get('/activity','FormController@activity');
+
+Route::post('/displayDatas','FormController@displayDatas');
+
+
+Route::get('/buttons','FormController@buttons');
+Route::get('/card','FormController@card');
+Route::get('/dashboard','FormController@dashboard');
+Route::get('/login','FormController@login');
