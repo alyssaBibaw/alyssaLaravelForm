@@ -42,6 +42,9 @@
 			<div class="form-group row">
 	  			<div class="col-xl-12">
 					<input type="submit"  class="btn btn-outline-success">
+
+          <a href="/displayData" class="btn btn-outline-danger">Display</a>
+
 				</div>
 			</div>
 		</center>
