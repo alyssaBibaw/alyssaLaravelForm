@@ -13,10 +13,7 @@
 	</center>
 
 
-  <a href="/Form" class="btn btn-outline-danger">Inser Data</a>
 
-  <br>
-  <br>
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header py-3">

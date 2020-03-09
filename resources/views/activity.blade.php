@@ -1,9 +1,5 @@
 @extends('layouts.master')
-<<<<<<< HEAD
 @section('title','Activity')
-=======
-@section('title','Assignment')
->>>>>>> 9606a5d763eac1e63617eb6d597785ada77830e6
 @section('form')
 
 
@@ -13,11 +9,7 @@
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header py-3">
-<<<<<<< HEAD
       <h6 class="m-0 font-weight-bold text-primary">Activity:</h6>
-=======
-      <h6 class="m-0 font-weight-bold text-primary">Assignment:</h6>
->>>>>>> 9606a5d763eac1e63617eb6d597785ada77830e6
     </div>
     <div class="card-body">
       <form method="POST" action="/displayDatas" enctype="multipart/form-data">
@@ -27,17 +19,13 @@
               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                   <span class="col-form-label-sm">First Name</span>
                 <input type="text" name="firstname" class="form-control">
-<<<<<<< HEAD
                 <div class="text-danger"> {{$errors->first("firstname")}} </div> <br>
-=======
->>>>>>> 9606a5d763eac1e63617eb6d597785ada77830e6
                   <span class="col-form-label-sm" id="firstname"></span>
               </div>
                
               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                 <span class="col-form-label-sm">Last Name</span>
                   <input type="text" name="lastname" class="form-control"> 
-<<<<<<< HEAD
                   <div class="text-danger"> {{$errors->first("lastname")}} </div> <br>
                   <span class="col-form-label-sm" id="lastname"></span>
                 
@@ -86,17 +74,6 @@
                    
               </div>
 
-=======
-                    <span class="col-form-label-sm" id="lastname"></span>
-              </div>
-            
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                <span class="col-form-label-sm">Age</span>
-                  <input type="number" name="age" class="form-control"> 
-                    <span class="col-form-label-sm" id="age"></span>
-              </div>
-        </div>
->>>>>>> 9606a5d763eac1e63617eb6d597785ada77830e6
 
           <center>
             <div class="form-group row">
@@ -107,7 +84,6 @@
           </center>
 
       </form>
-<<<<<<< HEAD
       <br>
       @if(count($errors) > 0 )
       <div class="alert alert-danger"></div>
@@ -120,8 +96,6 @@
 @endif 
 
 
-=======
->>>>>>> 9606a5d763eac1e63617eb6d597785ada77830e6
     </div>
   </div>
 

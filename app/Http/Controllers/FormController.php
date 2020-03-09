@@ -36,25 +36,6 @@ class FormController extends Controller
 
       return view('activity');
 
-<<<<<<< HEAD
-=======
-   }
-
-
-   public function displayDatas(Request $request){
-    
-    $firstname = $request->input('firstname');
-    $lastname = $request->input('lastname');
-    $age = $request->input('age');
-
-    return view('displayAbout',['firstname' => $firstname,'lastname' => $lastname, 'age' => $age]);
-
-   }
-
-   public function displayData(){
-      $user = DB::select("SELECT * from insert_table");
-      return view('display',['user' => $user]);
->>>>>>> 9606a5d763eac1e63617eb6d597785ada77830e6
    }
 
 
@@ -80,7 +61,6 @@ class FormController extends Controller
     
 
 
-<<<<<<< HEAD
     return view('displayAbout',['firstname' => $firstname,'lastname' => $lastname, 'age' => $age , 'gender' => $gender , 'address' => $address, 'contact' => $contact, 'email' => $email, 'data' => $data]);
 */
    
@@ -100,12 +80,6 @@ class FormController extends Controller
                           'address'  =>'required|alpha',
                           'contact'  =>'required|max:11',
                           'email'  =>'required|alpha',]);
-=======
-      DB::INSERT("INSERT into insert_table(lastname,firstname,middlename)VALUES(?,?,?)",[$lastname,$firstname,$middlename]);
-      
-      Alert::success('Success Title', 'Success Message');
-      return view('form');
->>>>>>> 9606a5d763eac1e63617eb6d597785ada77830e6
 
 
 
