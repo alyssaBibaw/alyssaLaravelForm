@@ -73,13 +73,15 @@ class FormController extends Controller
     $contact = $req->input('contact');
     $email = $req->input('email');
 
-    $this->validate($req,['firstname' =>'required|alpha',
-                          'lastname'  =>'required|alpha',
-                          'age'       =>'required|integer|min:2|between:18,70',
-                          'gender'  =>'required|alpha',
-                          'address'  =>'required|alpha',
-                          'contact'  =>'required|max:11',
-                          'email'  =>'required|alpha',]);
+    $this->validate($req,[
+      'firstname' =>'required|alpha',
+      'lastname'  =>'required|alpha',
+      'age'       =>'required|integer|min:2|between:18,70',
+      'gender'  =>'required|alpha',
+      'address'  =>'required|alpha',
+      'contact'  =>'required|max:11',
+      'email'  =>'required|alpha',
+    ]);
 
 
 
